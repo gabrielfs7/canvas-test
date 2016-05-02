@@ -1,0 +1,28 @@
+
+<canvas id="screen" width="600px" height="600px"></canvas>
+<script>
+var screen = document.getElementById('screen');
+var context = screen.getContext("2d");
+
+// Drawing a rectangle
+context.fillStyle = "blue";
+context.fillRect(0, 0, 200, 400);
+
+//Drawing another rectangle
+context.fillStyle = "yellow";
+context.fillRect(400, 0, 200, 400);
+
+// Drwaing a rectagle
+context.fillStyle = "pink";
+context.beginPath();
+context.moveTo(300, 200);
+context.lineTo(200, 400);
+context.lineTo(400, 400);
+context.fill();
+
+// Drwaing a circle
+context.fillStyle = "grey";
+context.beginPath();
+context.arc(300, 200, 50, 0, 2 * 3.14);
+context.fill();
+</script>
