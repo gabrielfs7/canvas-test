@@ -1,4 +1,4 @@
-<canvas id="screen" width="600px" height="600px"></canvas>
+<canvas id="screen" width="600px" height="400px"></canvas>
 <script>
 var screen = document.getElementById('screen');
 var context = screen.getContext("2d");
@@ -11,47 +11,35 @@ context.stroke();
 // Drwaing a rectagle
 context.fillStyle = "yellow";
 context.beginPath();
-context.moveTo(0, 0);
-context.lineTo(300, 400); //x, y
-context.lineTo(600, 200);  //x, y
-context.lineTo(-300, -400);  //x, y
-context.lineTo(-600, -200);  //x, y
+context.moveTo(20, 200); //x, y
+context.lineTo(300, 20); //x, y
+context.lineTo(580, 200); //x, y
+context.lineTo(300, 380); //x, y
+context.lineTo(20, 200); //x, y
 context.stroke();
 context.fill();
-
 
 // Drwaing a circle
 context.fillStyle = "blue";
 context.beginPath();
-context.arc(300, 200, 100, 0, 2 * 3.14);
+context.arc(300, 200, 120, 0, 2 * 3.14);
 context.fill();
 context.stroke();
 </script>
 
-<canvas id="screen2" width="600px" height="600px"></canvas>
+<canvas id="screen2" width="600px" height="400px"></canvas>
 <script>
 var screen = document.getElementById('screen2');
 var context = screen.getContext("2d");
 
 // Drawing a rectangle
-context.fillStyle = "blue";
+context.fillStyle = "green";
 context.fillRect(0, 0, 200, 400);
 
 //Drawing another rectangle
-context.fillStyle = "yellow";
+context.fillStyle = "red";
 context.fillRect(400, 0, 200, 400);
 
-// Drwaing a rectagle
-context.fillStyle = "pink";
-context.beginPath();
-context.moveTo(300, 200);
-context.lineTo(200, 400);
-context.lineTo(400, 400);
-context.fill();
-
-// Drwaing a circle
-context.fillStyle = "grey";
-context.beginPath();
-context.arc(300, 200, 50, 0, 2 * 3.14);
-context.fill();
+context.fillStyle = "white";
+context.strokeRect(0, 0, 600, 400);
 </script>
